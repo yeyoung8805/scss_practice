@@ -1,16 +1,17 @@
 //Mixins
 
-@mixin box($size: 300px) {
+@mixin box($size: 300px, $color: tomato) {
   width: $size;
   height: $size;
-  background-color: tomato;
+  background-color: $color;
 }
 .container {
-  @include box(200px);
+  @include box(200px, red);
   .item {
-    @include box(100px);
+    @include box(100px, green);
   }
 }
 .box {
-  @include box;
+  // @include box(blue); // not available
+  @include box(80px, blue);
 }
