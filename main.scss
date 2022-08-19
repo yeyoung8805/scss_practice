@@ -1,5 +1,7 @@
+$color: royalblue;
+
 .container {
   h1 { //중첩문
-    color: red;
+    color: $color;
   }
 }
