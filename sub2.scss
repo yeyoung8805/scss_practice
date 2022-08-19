@@ -10,7 +10,7 @@ $map: (
   r: royalblue,
   y: yellow
 );
-//$list를 통해 반복적으로 출력가능하다.
+//$map를 통해 key, value 활용하여 반복적으로 출력가능하다.
 @each $key, $value in $map {
   .box-#{$key} {
     color: $value;
