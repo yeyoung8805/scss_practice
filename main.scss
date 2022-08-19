@@ -8,6 +8,6 @@
   border-radius: 10px;
   background-color: $color;
   &.built-in {
-    background-color: $color;
+    background-color: mix($color, red);
   }
 }
