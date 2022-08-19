@@ -11,6 +11,6 @@
     background-color: darken($color, 15%); //정확히 얼마나 어두워지는지는 모르나, hover 했을때 어두워지는 효과를 원할때 사용
   }
   &.built-in {
-    background-color: grayscale($color); //회색으로 바꿔준다. 퍼센트 비율이 필요 없다.
+    background-color: invert($color); //색상을 반전시켜준다.
   }
 }
