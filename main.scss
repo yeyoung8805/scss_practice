@@ -6,3 +6,9 @@ div {
   margin: 30px / 2;
   padding: 20px % 7;
 }
+span {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: serif;
+  font: 10px / 10px serif; //font: font-size(10px) / line-height(10px) font-family(serif); 라는 뜻이다.
+}
