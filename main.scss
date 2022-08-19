@@ -1,18 +1,13 @@
-//@function
-
-@mixin center { //@mixin 재활용하는 용도
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@function ratio($size, $ratio) { //@function 따로 계산해서 활용하는 용도
-  @return $size * $ratio;
-}
+//색상 내장 함수
 
 .box {
-  $width: 160px;
-  width: $width;
-  height: ratio($width, 9/16);
-  @include center;
+  $color: royalblue;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: $color;
+  &.built-in {
+    background-color: $color;
+  }
 }
