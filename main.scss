@@ -7,7 +7,10 @@
   margin: 20px;
   border-radius: 10px;
   background-color: $color;
+  &:hover {
+    background-color: darken($color, 15%); //정확히 얼마나 어두워지는지는 모르나, hover 했을때 어두워지는 효과를 원할때 사용
+  }
   &.built-in {
-    background-color: darken($color, 15%); //$color 가 15% 만큼 진해진 것이다.
+    background-color: darken($color, 15%); 
   }
 }
