@@ -1,18 +1,16 @@
 //Mixins
 
-.container {
-  width: 200px;
-  height: 200px;
-  background-color: orange;
+@mixin center {
   display: flex;
   justify-content: center; //수평정렬 가운데
   align-items: center; //수직정렬 가운데
+}
+.container {
+  @include center;
   .item {
-    width: 100px;
-    height: 100px;
-    background-color: royalblue;
-    display: flex;
-    justify-content: center; //수평정렬 가운데
-    align-items: center; //수직정렬 가운데
+    @include center;
   }
+}
+.box {
+  @include center;
 }
