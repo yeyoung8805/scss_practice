@@ -1,17 +1,10 @@
-//Mixins
+//반복문
+// for(let i = 0; i < 10; i +=1) {
+//   cnosole.log(`loop-${i}`);
+// }
 
-@mixin box($size: 300px, $color: tomato) {
-  width: $size;
-  height: $size;
-  background-color: $color;
-}
-.container {
-  @include box(200px, red);
-  .item {
-    @include box(100px, green);
+@for $i from 1 through 10 {
+  .box {
+    width: 100px;
   }
-}
-.box {
-  // @include box(blue); // not available
-  @include box($color: blue);
 }
