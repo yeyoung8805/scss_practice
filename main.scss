@@ -1,14 +1,13 @@
 //변수 (variables)
-$size: 100px; //전역변수
+
 .container {
+  $size: 200px;
   position: fixed;
   top: $size;
   .item {
+    $size: 100px;
     width: $size;
     height: $size;
     transform: translate($size);
   }
-}
-.box {
-  width: $size; //available
 }
