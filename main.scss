@@ -1,12 +1,12 @@
-//function
+//@function
 
-@mixin center {
+@mixin center { //@mixin 재활용하는 용도
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@function ratio($size, $ratio) {
+@function ratio($size, $ratio) { //@function 따로 계산해서 활용하는 용도
   @return $size * $ratio;
 }
 
