@@ -10,9 +10,9 @@ $map: (
   r: royalblue,
   y: yellow
 );
-
-.box {
-  width: 100px;
-  color: red;
-  position: relative;
+//$list를 통해 반복적으로 출력가능하다.
+@each $c in $list {
+  .box {
+    color: $c;
+  }
 }
