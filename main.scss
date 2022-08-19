@@ -13,5 +13,5 @@
 }
 .box {
   // @include box(blue); // not available
-  @include box(80px, blue);
+  @include box($color: blue);
 }
