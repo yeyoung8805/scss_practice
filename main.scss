@@ -1,16 +1,16 @@
 //Mixins
 
-@mixin center {
-  display: flex;
-  justify-content: center; //수평정렬 가운데
-  align-items: center; //수직정렬 가운데
+@mixin box {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
 }
 .container {
-  @include center;
+  @include box;
   .item {
-    @include center;
+    @include box;
   }
 }
 .box {
-  @include center;
+  @include box;
 }
