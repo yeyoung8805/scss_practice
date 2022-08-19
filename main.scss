@@ -1,7 +1,7 @@
-$color: royalblue;
-
 .container {
-  h1 { //중첩문
-    color: $color;
+  h1 { 
+    color: royalblue;
+    /* background-color: orange; */ 
+    // font-size: 60px;
   }
 }
