@@ -1,4 +1,4 @@
-@import "./sub"; //@import url("./sub.scss"); 처럼 확장자 입력 해도 되고 안해도 상관 없다.
+@import "./sub", "./sub2"; // 두개 이상의 .scss 파일 임포트 해올 수 있다.
 
 $color: royalblue;
 
