@@ -2,6 +2,6 @@
   h1 { 
     color: royalblue;
     /* background-color: orange; */ 
-    // font-size: 60px;
+    // font-size: 60px; //scss를 css로 컴파일(변환)했을때는, 나타나지 않는다.
   }
 }
