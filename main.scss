@@ -1,9 +1,22 @@
-@import "./sub", "./sub2"; // 두개 이상의 .scss 파일 임포트 해올 수 있다.
-
-$color: royalblue;
+@mixin left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @content;
+}
 
 .container {
-  h1 {
-    color: $color;
+  width: 100px;
+  height: 100px;
+  @include left-top;
+}
+
+.box {
+  width: 200px;
+  height: 300px;
+  @include left-top {
+    bottom: 0;
+    right: 0;
+    margin: auto;
   }
 }
