@@ -1,7 +1,19 @@
-// & 상위 선택자 참조 (치환) => &이 상위 선택자를 참조하고 있다.
+// 중첩된 속성
 
-.fs {
-  &-small { font-size: 12px;}
-  &-medium { font-size: 14px;}
-  &-large { font-size: 16px;}
+.box {
+  font: { //반복되는 중첩된 속성. css로 컴파일 될때 font- 로 (네임스페이스)가 붙게 된다.
+    weight: bold;
+    size: 10px;
+    family: sans-serif;
+  };
+  margin: {
+    top: 10px;
+    left: 20px;
+  };
+  padding: {
+    top: 10px;
+    bottom: 40px;
+    left: 20px;
+    right: 30px;
+  };
 }
