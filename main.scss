@@ -11,8 +11,8 @@
 }
 
 .box {
-  $width: 100px;
+  $width: 160px;
   width: $width;
-  height: ratio($width, 1/2);
+  height: ratio($width, 9/16);
   @include center;
 }
