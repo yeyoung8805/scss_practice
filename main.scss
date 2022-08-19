@@ -1,13 +1,16 @@
-.container {
-  > ul {
-    li {
-      font-size: 40px;
-      .name {
-        color: royalblue;
-      }
-      .age {
-        color: orange;
-      }
+// & 상위 선택자 참조 (치환) => &이 상위 선택자를 참조하고 있다.
+
+.btn {
+  position: absolute;
+  &.active {
+    color: red;
+  }
+}
+
+.list {
+  li {
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
