@@ -8,6 +8,6 @@
   border-radius: 10px;
   background-color: $color;
   &.built-in {
-    background-color: mix($color, red);
+    background-color: lighten($color, 15%); //$color 가 15% 만큼 밝아진 것이다.
   }
 }
