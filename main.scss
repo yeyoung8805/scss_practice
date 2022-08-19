@@ -11,6 +11,6 @@
     background-color: darken($color, 15%); //정확히 얼마나 어두워지는지는 모르나, hover 했을때 어두워지는 효과를 원할때 사용
   }
   &.built-in {
-    background-color: darken($color, 15%); 
+    background-color: saturate($color, 40%); //채도를 40% 올려준다.
   }
 }
