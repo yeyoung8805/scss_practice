@@ -1,6 +1,6 @@
 //Mixins
 
-@mixin box($size) {
+@mixin box($size: 300px) {
   width: $size;
   height: $size;
   background-color: tomato;
@@ -12,5 +12,5 @@
   }
 }
 .box {
-  @include box(100px);
+  @include box;
 }
