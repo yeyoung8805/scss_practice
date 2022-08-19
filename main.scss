@@ -4,10 +4,10 @@ $size: 100px;
 
 .container {
   position: fixed;
-  top: 100px;
+  top: $size;
   .item {
-    width: 100px;
-    height: 100px;
-    transform: translate(100px);
+    width: $size;
+    height: $size;
+    transform: translate($size);
   }
 }
