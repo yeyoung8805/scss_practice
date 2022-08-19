@@ -1,7 +1,7 @@
 .container {
   h1 { 
     color: royalblue;
-    /* background-color: orange; */ 
+    /* background-color: orange; */  //변환된 후에도 남아있게 하고 싶을때
     // font-size: 60px; //scss를 css로 컴파일(변환)했을때는, 나타나지 않는다.
   }
 }
