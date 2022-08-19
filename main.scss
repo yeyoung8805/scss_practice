@@ -1,14 +1,8 @@
-//변수 (variables)
-
-.container {
-  $size: 200px;
-  position: fixed;
-  top: $size;
-  .item {
-    $size: 100px;
-    width: $size;
-    height: $size;
-    transform: translate($size);
-  }
-  left: $size;
+//산술 연산 (arithmetic operation)
+div {
+  width: 20px + 20px;
+  height: 40px - 10px;
+  font-size: 10px * 2;
+  margin: 30px / 2;
+  padding: 20px % 7;
 }
