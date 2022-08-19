@@ -1,15 +1,12 @@
-//산술 연산 (arithmetic operation)
-$size: 30px;
-div {
-  width: calc(100% - 200px);
-  height: 40px - 10px;
-  font-size: 10px * 2;
-  margin: (10px + 12px) / 2; //11px
-  padding: 20px % 7;
-}
-span {
-  font-size: 10px;
-  line-height: 10px;
-  font-family: serif;
-  font: 10px / 10px serif; //font: font-size(10px) / line-height(10px) font-family(serif); 라는 뜻이다.
+//Mixins
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  .item {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+  }
 }
