@@ -1,19 +1,13 @@
-// 중첩된 속성
+//변수 (variables)
 
-.box {
-  font: { //반복되는 중첩된 속성. css로 컴파일 될때 font- 로 (네임스페이스)가 붙게 된다.
-    weight: bold;
-    size: 10px;
-    family: sans-serif;
-  };
-  margin: {
-    top: 10px;
-    left: 20px;
-  };
-  padding: {
-    top: 10px;
-    bottom: 40px;
-    left: 20px;
-    right: 30px;
-  };
+$size: 100px;
+
+.container {
+  position: fixed;
+  top: 100px;
+  .item {
+    width: 100px;
+    height: 100px;
+    transform: translate(100px);
+  }
 }
