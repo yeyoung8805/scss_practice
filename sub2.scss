@@ -11,8 +11,8 @@ $map: (
   y: yellow
 );
 //$list를 통해 반복적으로 출력가능하다.
-@each $c in $list {
-  .box {
-    color: $c;
+@each $key, $value in $map {
+  .box-#{$key} {
+    color: $value;
   }
 }
