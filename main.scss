@@ -1,7 +1,6 @@
 //변수 (variables)
-
+$size: 100px; //전역변수
 .container {
-  $size: 100px; //지역변수
   position: fixed;
   top: $size;
   .item {
@@ -11,5 +10,5 @@
   }
 }
 .box {
-  width: $size; //not available
+  width: $size; //available
 }
